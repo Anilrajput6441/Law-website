@@ -8,31 +8,6 @@ type FAQ = {
 
 const faqs: FAQ[] = [
   {
-    question: "What Can Be Trademarked?",
-    answer:
-      "A trademark can protect your brand name, logo, slogan, product name, business identity, and even sound or color combinations associated with your brand.",
-  },
-  {
-    question: "How Long Does It Take to Register a Trademark?",
-    answer:
-      "The initial application takes 1-2 days, but the entire process can take 6-12 months, depending on objections. However, you can start using ™ immediately after filing.",
-  },
-  {
-    question: "What If Someone Else Is Using My Business Name?",
-    answer:
-      "If your brand name is being used but not registered as a trademark, you may still be able to claim it legally. Our experts can help.",
-  },
-  {
-    question: "How Long Does a Trademark Last?",
-    answer:
-      "A trademark is valid for 10 years and can be renewed indefinitely, ensuring lifelong brand protection.",
-  },
-  {
-    question: "What If Someone Copies My Brand After I Register My Trademark?",
-    answer:
-      "If someone uses your trademark without permission, you can take legal action to stop them and even claim damages.",
-  },
-  {
     question:
       "What is the difference between ™ (Trademark) and ® (Registered Trademark)?",
     answer: (
@@ -112,21 +87,23 @@ const faqs: FAQ[] = [
     question: "What should I do if my trademark application is rejected?",
     answer: (
       <div>
-        <p>A trademark can be rejected for multiple reasons, such as:</p>
-        <ul className="list-disc list-inside text-red-600">
-          <li>🚨 The name is too generic or descriptive.</li>
-          <li>🚨 It is similar to an already registered trademark.</li>
-          <li>🚨 It is misleading or offensive.</li>
-          <li>🚨 There are errors in the application.</li>
+        <p className="text-red-600">
+          A trademark can be rejected for multiple reasons, such as:
+        </p>
+        <ul className="list-disc list-inside ">
+          <li> The name is too generic or descriptive.</li>
+          <li> It is similar to an already registered trademark.</li>
+          <li> It is misleading or offensive.</li>
+          <li> There are errors in the application.</li>
         </ul>
-        <p>
+        <p className="text-green-600">
           If your trademark application is rejected, don&apos;t panic! Our legal
           team will:
         </p>
-        <ul className="list-disc list-inside text-green-600">
-          <li>✔ Analyze the reason for rejection.</li>
-          <li>✔ File a response to objections.</li>
-          <li>✔ Make necessary changes to improve approval chances.</li>
+        <ul className="list-disc list-inside ">
+          <li> Analyze the reason for rejection.</li>
+          <li> File a response to objections.</li>
+          <li> Make necessary changes to improve approval chances.</li>
         </ul>
         <p>
           ✅ We have successfully defended and registered hundreds of trademarks
@@ -135,6 +112,32 @@ const faqs: FAQ[] = [
       </div>
     ),
   },
+  {
+    question: "What Can Be Trademarked?",
+    answer:
+      "A trademark can protect your brand name, logo, slogan, product name, business identity, and even sound or color combinations associated with your brand.",
+  },
+  {
+    question: "How Long Does It Take to Register a Trademark?",
+    answer:
+      "The initial application takes 1-2 days, but the entire process can take 6-12 months, depending on objections. However, you can start using ™ immediately after filing.",
+  },
+  {
+    question: "What If Someone Else Is Using My Business Name?",
+    answer:
+      "If your brand name is being used but not registered as a trademark, you may still be able to claim it legally. Our experts can help.",
+  },
+  {
+    question: "How Long Does a Trademark Last?",
+    answer:
+      "A trademark is valid for 10 years and can be renewed indefinitely, ensuring lifelong brand protection.",
+  },
+  {
+    question: "What If Someone Copies My Brand After I Register My Trademark?",
+    answer:
+      "If someone uses your trademark without permission, you can take legal action to stop them and even claim damages.",
+  },
+
   {
     question: "Can I sell or transfer my trademark to someone else?",
     answer:
@@ -185,7 +188,7 @@ const FAQSection = () => {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section className="py-16 px-6 bg-white">
+    <section id="faq" className="py-16 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
           Frequently Asked Questions (<span className="text-red-500">FAQs</span>

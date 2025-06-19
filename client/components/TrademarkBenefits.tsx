@@ -36,7 +36,7 @@ const benefits = [
 
 export default function TrademarkBenefitsFluid() {
   return (
-    <section className="bg-[#f9fbff] py-24 px-4" id="benefits">
+    <section className="bg-[#f9fbff] pt-10 px-4" id="benefits">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-start">
         {/* Left Column - Heading */}
         <div className="h-full">

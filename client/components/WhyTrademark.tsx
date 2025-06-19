@@ -1,3 +1,4 @@
+"use client";
 import {
   AlertTriangle,
   Gavel,
@@ -5,8 +6,14 @@ import {
   Megaphone,
   PhoneCall,
 } from "lucide-react";
+import { usePopup } from "@/context/PopupContext"; // ✅ import popup hook
 
 export default function WhyTrademarkEnhanced() {
+  const { triggerPopup } = usePopup(); // ✅ use trigger from context
+  const handleConsultationClick = () => {
+    triggerPopup(); // ✅ triggers global popup
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section id="why" className="bg-[#f9fbff] py-20 px-4">
       <div className="max-w-7xl mx-auto">
@@ -61,7 +68,7 @@ export default function WhyTrademarkEnhanced() {
         </div>
 
         {/* Solution Highlight */}
-        <div className="bg-blue-50 border border-blue-200 rounded-xl px-8 py-10 md:flex items-start justify-between gap-12 shadow-sm">
+        <div className="bg-blue-50 border border-blue-200 rounded-xl px-8 py-10 md:flex items-center justify-between gap-12 shadow-sm">
           <div className="flex items-start gap-4 mb-8 md:mb-0">
             <Megaphone className="text-blue-700 w-8 h-8 mt-1" />
             <div>
@@ -75,15 +82,24 @@ export default function WhyTrademarkEnhanced() {
                 positioning.
                 <br />
                 <br />
-                Whether you&apos;re just starting or scaling your startup,
-                trademarking is a vital legal foundation. Our experienced legal
-                team will guide you through a hassle-free, 100% online filing
-                process.
+                <span className="font-kanit font-bold text-lg">
+                  Don&apos;t wait for someone to misuse your brand—trademark it
+                  today!
+                </span>
+                <br />
+                Our team of experts will guide you for a hassle-free online TM
+                registration service in India! We will help you through the
+                entire trademark registration process, ensuring your brand is
+                legally secured.
               </p>
             </div>
           </div>
           <a
             href="#form"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              handleConsultationClick();
+            }}
             className="inline-flex items-center gap-2 bg-blue-700 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-800 transition whitespace-nowrap"
           >
             <PhoneCall className="w-5 h-5" />

@@ -1,6 +1,11 @@
 "use client";
-
+import { usePopup } from "@/context/PopupContext"; // ✅ import popup hook
 export default function OneRoofSection() {
+  const { triggerPopup } = usePopup(); // ✅ use trigger from context
+  const handleConsultationClick = () => {
+    triggerPopup(); // ✅ triggers global popup
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <section className="relative bg-[#fff6e9] py-20 overflow-hidden">
       {/* Background pattern */}
@@ -40,6 +45,10 @@ export default function OneRoofSection() {
         <div className="mt-8">
           <a
             href="#contact"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              handleConsultationClick();
+            }}
             className="inline-block px-6 py-3 bg-blue-800 text-white font-semibold rounded-xl shadow hover:bg-blue-900 transition"
           >
             Get a Free Consultation

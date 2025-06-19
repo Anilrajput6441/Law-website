@@ -77,7 +77,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => (
 
 const Testimonials = () => {
   return (
-    <section className="py-20 px-6 bg-[#f8faff]">
+    <section id="testimonials" className="py-20 px-6 bg-[#f8faff]">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-extrabold text-gray-800">
           Client Success Stories – What Our Clients Say

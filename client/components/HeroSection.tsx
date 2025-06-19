@@ -2,8 +2,47 @@
 
 import { CheckCircle } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function HeroSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    business: "",
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const url = process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL;
+    if (!url) {
+      console.error("Google Script URL is not defined");
+      return;
+    }
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `Name=${encodeURIComponent(
+        formData.name
+      )}&Email=${encodeURIComponent(formData.email)}&Phone=${encodeURIComponent(
+        formData.phone
+      )}&Business=${encodeURIComponent(formData.business)}`,
+    })
+      .then((res) => res.text())
+      .then(() => {
+        setIsSubmitted(true);
+        setFormData({ name: "", email: "", phone: "", business: "" });
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <section id="hero" className="bg-[#fff6e9] py-16 px-4 font-kanit">
       <div className="max-w-[75rem] mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
@@ -49,29 +88,51 @@ export default function HeroSection() {
         </div>
 
         {/* Right Form */}
-        <div className="flex-1 bg-white p-8 mt-15 rounded-lg shadow-md w-full max-w-md">
+        <div className="flex-1 bg-white p-8 rounded-lg shadow-md w-full max-w-md">
           <h2 className="text-xl font-bold mb-6 text-gray-900">
             Secure Your Brand Identity — Book A Free Consultation
           </h2>
-          <form className="space-y-4">
+
+          {isSubmitted && (
+            <div className="mb-4 text-green-600 font-semibold">
+              ✅ Form submitted successfully!
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-4">
             <input
               type="text"
-              placeholder="Full Name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              placeholder="Name"
+              required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               placeholder="Email"
+              required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="tel"
-              placeholder="Phone Number"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone"
+              required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <input
               type="text"
-              placeholder="Business Name"
+              name="business"
+              value={formData.business}
+              onChange={handleChange}
+              placeholder="Business"
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 
@@ -85,7 +146,7 @@ export default function HeroSection() {
 
             <button
               type="submit"
-              className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 rounded-md transition"
+              className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 rounded-md transition cursor-pointer"
             >
               SEND MESSAGE
             </button>

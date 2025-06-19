@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Kanit } from "next/font/google";
 import "./globals.css";
+import ScrollMarquee from "@/components/ScrollMarquee";
+import { PopupProvider } from "@/context/PopupContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +35,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} antialiased`}
       >
-        {children}
+        <PopupProvider>
+          <ScrollMarquee />
+          {children}
+        </PopupProvider>
       </body>
     </html>
   );

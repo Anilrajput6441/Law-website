@@ -2,22 +2,44 @@
 
 import { CheckCircle, PhoneCall } from "lucide-react";
 import Image from "next/image";
+import { usePopup } from "@/context/PopupContext"; // ✅ import popup hook
 
 export default function WhoWeAre() {
+  const { triggerPopup } = usePopup(); // ✅ use trigger from context
+  const handleConsultationClick = () => {
+    triggerPopup(); // ✅ triggers global popup
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
-    <section className="bg-[#FFFFFF] py-20 px-6">
+    <section id="services" className="bg-[#FFFFFF] py-20 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           👩‍⚖️ Who We Are
         </h2>
-        <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
-          At <strong>D Taksh IP</strong>, we&apos;re not just consultants –
-          we’re former insiders of the Indian IP system. Our team includes
-          ex-Trademark Hearing Officers and ex-Copyright Examiners who’ve
-          handled thousands of IP cases. Now, we bring that expertise to protect
-          your brand.
+        <p
+          id="about"
+          className="text-center text-gray-700 max-w-3xl mx-auto mb-10"
+        >
+          At <strong>D Taksh IP</strong>, we&apos;re not just consultants – we
+          are former insiders of the Indian IP system. Our team comprises
+          ex-Trademark Hearing Officers and ex-Copyright Examiners who have
+          processed, examined, and decided on thousands of IP matters.
+          <br />
+          Now, we use that expertise to help startups, businesses, and creators
+          protect what’s rightfully theirs.
         </p>
+        <div className=" flex justify-center bg-white ">
+          <a
+            href="/D-takship.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-700 font-semibold hover:underline flex flex-col items-center"
+          >
+            <Image src="/udyamimg.png" alt="udyamimg" width={50} height={70} />
+            Verified MSME Certificate
+          </a>
+        </div>
 
         {/* Services Section */}
         <div className="bg-white p-6 rounded-xl shadow-md mb-10">
@@ -49,36 +71,38 @@ export default function WhoWeAre() {
             </h3>
             <ul className="space-y-4 text-gray-700 text-md">
               <li>
-                🔹 <strong>Ex-Officials Advantage</strong> – Former Indian IP
-                Office officers on our team
+                🔹 <strong>Ex-Officials Advantage</strong> – Our team includes
+                former officials from the Indian IP Office – we know what works
+                and what gets rejected.
               </li>
               <li>
                 🔹 <strong>Tailored Drafting</strong> – Avoid refusals with
-                professionally drafted applications
+                professionally drafted applications and replies
               </li>
               <li>
-                🔹 <strong>Hearing-Ready</strong> – Real courtroom and hearing
-                experience
+                🔹 <strong>Hearing-Ready</strong> – RReal experience presenting
+                and deciding hearings
               </li>
               <li>
-                🔹 <strong>Transparent Pricing</strong> – ₹2500 flat fee. No
-                hidden charges.
+                🔹 <strong> Cost-Effective and Transparenc</strong> –
+                Comprehensive service at just ₹2500, No hidden costs. Flat-fee
+                structure. Free consultations.
               </li>
               <li>
-                🔹 <strong>Fast & Professional</strong> – Quick filings with the
-                right documentation
+                🔹 <strong>Speedy & Professional </strong> – Quick turnaround
+                with proper documentation
               </li>
               <li>
-                ✔ <strong>1000+ Successful Registrations</strong> – Across all
-                business types
+                🔹 <strong>1000+ Successful Trademark Registrations</strong> –
+                Helping Startups, Small Businesses, and Corporates.
               </li>
             </ul>
           </div>
-          <div className="mb-[-25]">
+          <div className="flex bottom-0 mb-[-25]">
             <Image
               src="/why-choose-us.png"
               alt="logo"
-              width={600}
+              width={800}
               height={600}
             />
           </div>
@@ -99,19 +123,30 @@ export default function WhoWeAre() {
             </li>
             <li className="flex items-center gap-2">
               <CheckCircle className="text-green-500" size={16} /> Reply to
-              Objections
+              Examination Report (Objection)
             </li>
             <li className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={16} /> Show Cause
-              Hearing
+              <CheckCircle className="text-green-500" size={16} /> Appearance in
+              Show Cause Hearing
             </li>
           </ul>
           <p className="text-lg text-gray-600 mb-4">
-            Govt. Fee: ₹4500 for individuals/startups, ₹9000 for companies.
+            Flat Fee: ₹2500 (Professional Fees Only)
             <br />
-            <strong>No hidden charges. End-to-end expert handling.</strong>
+            Govt. fees as applicable (₹4500 for individuals/startups; ₹9000 for
+            companies)
+            <br />
+            <strong>
+              No hidden charges. No confusion. Just expert handling, end-to-end.
+            </strong>
           </p>
-          <button className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg">
+          <button
+            className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg cursor-pointer"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              handleConsultationClick();
+            }}
+          >
             <PhoneCall className="inline-block mr-2" size={16} /> Get a Free
             Consultation
           </button>
