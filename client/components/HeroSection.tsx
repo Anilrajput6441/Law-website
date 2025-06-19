@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <section id="hero" className="bg-[#fff6e9] py-16 px-4 font-kanit">
-      <div className="max-w-6xl  mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+      <div className="max-w-[75rem] mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left Content */}
         <div className="flex-1">
           <div className="h-[10vh]">
