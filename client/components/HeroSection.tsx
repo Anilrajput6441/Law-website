@@ -1,7 +1,7 @@
 "use client";
 
-import { CheckCircle } from "lucide-react";
-import Image from "next/image";
+import { CheckCircle, PhoneCall } from "lucide-react";
+// import Image from "next/image";
 import { useState } from "react";
 
 export default function HeroSection() {
@@ -44,12 +44,12 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="bg-[#fff6e9] py-16 px-4 font-kanit">
-      <div className="max-w-[75rem] mx-auto flex flex-col lg:flex-row items-center gap-10">
+    <section id="hero" className="bg-[#0d275e] py-16 px-4 font-kanit">
+      <div className="max-w-[77rem] mx-auto flex flex-col lg:flex-row items-center gap-10">
         {/* Left Content */}
         <div className="flex-1">
-          <div className="h-[10vh]">
-            <p className="absolute text-xl font-medium z-1 text-blue-700 ">
+          {/* <div className="h-[10vh]">
+            <p className="absolute text-xl font-medium z-1 text-[#FFFF] ">
               TM Filing @ Rs. 998*
             </p>
             <Image
@@ -59,32 +59,42 @@ export default function HeroSection() {
               height={30}
               className=" absolute mt-[-30]"
             />
-          </div>
+          </div> */}
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-kanit text-gray-900 mb-4">
-            Online Trademark Registration in India –
+          <h1 className="text-3xl md:text-4xl lg:text-[2.4rem] font-kanit font-bold text-[#FFFFFF] mb-4">
+            <span className="font-kanit">
+              Online Trademark Registration in India –
+            </span>
             <br className="hidden md:block" />
-            Protect Your Brand Name, Logo & Slogan
+            Protect Your Brand Name, <br />
+            Logo & Slogan
           </h1>
-          <p className="text-gray-600 mb-6 text-base md:text-lg">
+          <p className="text-[#FFFFFF] mb-6 text-base md:text-lg">
             Your business name, logo & slogan are your most valuable assets –
             protect them before someone else does!
           </p>
 
-          <ul className="space-y-3 text-gray-800 text-base md:text-lg">
+          <ul className="space-y-3 text-[#FFFFFF] text-base md:text-lg">
             <li className="flex items-center gap-2">
-              <CheckCircle className="text-blue-600" size={20} />
+              <CheckCircle className="text-[#F3B419]" size={30} />
               Fill Out the Form.
             </li>
             <li className="flex items-center gap-2">
-              <CheckCircle className="text-blue-600" size={20} />
+              <CheckCircle className="text-[#F3B419]" size={30} />
               Expert Support from Filing to Approval.
             </li>
             <li className="flex items-center gap-2">
-              <CheckCircle className="text-blue-600" size={20} />
+              <CheckCircle className="text-[#F3B419]" size={30} />
               Get TM Application Number in 24 Hours.
             </li>
           </ul>
+          <a
+            href="tel:+919873904892"
+            className="bg-[#F2B41A] w-fit flex justify-center items-center gap-x-3 rounded-full px-10 mt-10 py-3 hover:bg-yellow-500 transition"
+          >
+            <PhoneCall />
+            <span className="text-xl">+91-98739 04892</span>
+          </a>
         </div>
 
         {/* Right Form */}
@@ -137,7 +147,7 @@ export default function HeroSection() {
             />
 
             <div className="flex items-start gap-2">
-              <input type="checkbox" required />
+              <input type="checkbox" defaultChecked required />
               <label className="text-sm text-gray-600">
                 I agree to the Privacy Policy and consent to receive
                 communications related to my inquiry.
@@ -146,7 +156,7 @@ export default function HeroSection() {
 
             <button
               type="submit"
-              className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 rounded-md transition cursor-pointer"
+              className="w-full bg-[#F3B419] hover:scale-102   text- font-semibold py-3 rounded-md transition cursor-pointer"
             >
               SEND MESSAGE
             </button>

@@ -64,7 +64,7 @@ export default function TrademarkProcessZigZag() {
                 }`}
               >
                 {/* Icon */}
-                <div className="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md shrink-0">
+                <div className="bg-yellow-400  w-12 h-12 rounded-full flex items-center justify-center shadow-md shrink-0">
                   <Icon size={22} />
                 </div>
 

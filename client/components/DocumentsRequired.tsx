@@ -6,7 +6,7 @@ const documents = [
   {
     title: "Proof of Applicant",
     description:
-      "PAN card and address proof of applicant. Certificate of registration (for entities other than individuals).",
+      "Identity proof (Aadhar, pan card etc). Certificate of registration (for entities other than individuals).",
   },
   {
     title: "Brand Name & Logo",

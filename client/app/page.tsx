@@ -4,6 +4,7 @@ import FAQSection from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import MarqueeLogos from "@/components/MarqueeLogos";
 import OneRoofSection from "@/components/OneRoofSection";
 import TestimonialTimeline from "@/components/Testimonial";
 import TrademarkBenefitsFluid from "@/components/TrademarkBenefits";
@@ -24,6 +25,7 @@ export default function Home() {
       <DocumentsRequired />
       <OneRoofSection />
       <WhoWeAre />
+      <MarqueeLogos />
       <TestimonialTimeline />
       <FAQSection />
       <Consultation />

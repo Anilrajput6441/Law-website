@@ -26,15 +26,15 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md z-50">
+    <header className="w-full bg-white py-2 shadow-md z-50">
       {isPopupVisible && (
         <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-green-100 border border-green-400 text-green-800 px-6 py-3 rounded shadow-md z-50">
           📩 Please fill out the form to get your free consultation.
         </div>
       )}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+      <div className="mx-auto max-w-7xl px-4  sm:px-6 lg:px-8 flex justify-between items-center h-16">
         <Link href="/" className="text-xl font-bold text-blue-700">
-          <Image src="/lawlogo.png" alt="logo" width={250} height={150} />
+          <Image src="/lawlogo.png" alt="logo" width={150} height={50} />
         </Link>
 
         <nav className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
@@ -42,7 +42,7 @@ export default function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="hover:text-blue-600 transition-colors scroll-smooth"
+              className="hover:bg-[#F2B41A] p-2 rounded-full  duration-300 transition-colors scroll-smooth"
             >
               {item.label}
             </a>
@@ -51,7 +51,7 @@ export default function Header() {
 
         <a
           onClick={handleConsultationClick}
-          className="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700 transition-colors cursor-pointer"
+          className="hidden md:inline-block bg-[#F3B419]  px-4 py-2 rounded-md text-sm hover:scale-102 transition-colors cursor-pointer"
         >
           Get a Free Consultation
         </a>

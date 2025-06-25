@@ -61,11 +61,11 @@ export default function TrademarkBenefitsFluid() {
         <div className="space-y-8">
           {benefits.map(({ title, icon: Icon, description }, i) => (
             <div key={i} className="flex items-start gap-5 group">
-              <div className="flex-shrink-0 bg-gradient-to-br from-blue-600 to-blue-400 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-md transition group-hover:scale-105">
+              <div className="flex-shrink-0 bg-gradient-to-br from-yellow-200 to-yellow-400  w-12 h-12 rounded-full flex items-center justify-center shadow-md transition group-hover:scale-105">
                 <Icon size={22} />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-blue-700">
+                <h3 className="text-lg font-semibold text-gray-800 group-hover:text-gray-500">
                   {title}
                 </h3>
                 <p className="text-gray-600 text-base mt-1 leading-relaxed">
@@ -78,7 +78,7 @@ export default function TrademarkBenefitsFluid() {
       </div>
 
       {/* CTA Bar */}
-      <div className="mt-20 max-w-3xl mx-auto bg-yellow-100 border border-yellow-300 text-yellow-900 text-center py-6 px-6 rounded-xl shadow-inner">
+      <div className="mt-20 max-w-3xl mx-auto bg-[#007AAE] border  text-white text-center py-6 px-6 rounded-xl shadow-inner">
         ⚠️{" "}
         <strong>
           If your brand isn’t trademarked, someone else can register it first.

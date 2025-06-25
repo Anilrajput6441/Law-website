@@ -30,7 +30,7 @@ export default function WhyTrademarkEnhanced() {
 
         {/* Dangers Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-md shadow-sm">
+          <div className="shadow-xl p-6 rounded-md border border-gray-200">
             <div className="flex items-center gap-2 mb-3 text-red-600 font-semibold">
               <AlertTriangle size={20} />
               Brand Hijacking Risk
@@ -42,7 +42,7 @@ export default function WhyTrademarkEnhanced() {
             </p>
           </div>
 
-          <div className="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-md shadow-sm">
+          <div className="shadow-xl p-6 rounded-md border border-gray-200">
             <div className="flex items-center gap-2 mb-3 text-yellow-700 font-semibold">
               <Gavel size={20} />
               Expensive Legal Battles
@@ -54,7 +54,7 @@ export default function WhyTrademarkEnhanced() {
             </p>
           </div>
 
-          <div className="bg-orange-50 border-l-4 border-orange-400 p-6 rounded-md shadow-sm">
+          <div className="shadow-xl p-6 rounded-md border border-gray-200">
             <div className="flex items-center gap-2 mb-3 text-orange-600 font-semibold">
               <RotateCcw size={20} />
               Costly Rebranding
@@ -100,7 +100,7 @@ export default function WhyTrademarkEnhanced() {
               window.scrollTo({ top: 0, behavior: "smooth" });
               handleConsultationClick();
             }}
-            className="inline-flex items-center gap-2 bg-blue-700 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-800 transition whitespace-nowrap"
+            className="inline-flex items-center gap-2 bg-[#F3B419]  font-semibold px-6 py-3 rounded-md hover:scale-102 transition whitespace-nowrap"
           >
             <PhoneCall className="w-5 h-5" />
             Secure Your Trademark Now

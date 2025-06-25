@@ -8,8 +8,8 @@ const badges = [
   },
   {
     icon: <Smile className="w-6 h-6 text-white" />,
-    title: "5+ Years Expertise",
-    subtitle: "In Indian Trademark Law",
+    title: "10+ Years Expertise",
+    subtitle: "Ex officials of CGPDTM",
   },
   {
     icon: <Scale className="w-6 h-6 text-white" />,

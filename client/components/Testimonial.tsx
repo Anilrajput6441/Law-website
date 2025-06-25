@@ -33,13 +33,13 @@ const testimonials = [
       "Competitor Tried to Steal My Business Name – But We Won the Case!",
   },
   {
-    name: "Manish Verma",
+    name: "Dev Verma",
     title: "Tech Entrepreneur",
     stars: 5,
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAzG3NkOwl16mrfvMqBOaIUdcEoT8vUV7wSQ&s",
     quote:
-      "I was hesitant about the trademark registration process because I thought it would be complicated and time-consuming. But D Taksh IP made everything smooth and stress-free. They checked name availability, handled all the paperwork, and kept me updated throughout the process. Within months, I had my official trademark registration. Now, I can confidently expand my business without worrying about copycats. Highly recommended!",
+      "I had a great experience filing my trademark with D Taksh IP. Their team was highly responsive and attentive, guiding me through each step of the process with clear communication and expert advice. Their thoroughness and dedication made the entire registration process smooth and reassuring. I highly recommend their services.",
     highlight:
       "Quick & Hassle-Free Trademark Registration – Highly Recommended!",
   },

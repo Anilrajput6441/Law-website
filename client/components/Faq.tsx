@@ -157,7 +157,7 @@ const FAQItem = ({
   <div className="mb-3 border-b border-gray-200">
     <button
       className={`w-full text-left py-4 px-2 focus:outline-none flex justify-between items-center transition-colors ${
-        open ? "text-blue-700 font-semibold" : "text-gray-800"
+        open ? "text-[#0E265E] font-semibold" : "text-gray-800"
       }`}
       onClick={onClick}
       aria-expanded={open}
@@ -191,8 +191,8 @@ const FAQSection = () => {
     <section id="faq" className="py-16 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-10">
-          Frequently Asked Questions (<span className="text-red-500">FAQs</span>
-          )
+          Frequently Asked Questions (
+          <span className="text-[#0E265E]">FAQs</span>)
         </h2>
         <div className="mx-auto">
           {faqs.map((faq, index) => (

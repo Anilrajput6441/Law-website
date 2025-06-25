@@ -64,10 +64,10 @@ const ScrollTopForm = () => {
         show ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
       }`}
     >
-      <div className="max-w-7xl mx-auto md:px-4 md:py-3 flex flex-wrap md:flex-nowrap items-center justify-center md:justify-between gap-3">
+      <div className="max-w-8xl  mx-auto md:px-4 md:py-3 flex flex-wrap md:flex-nowrap items-center justify-center md:justify-evenly gap-3">
         {/* CTA Text */}
-        <p className="hidden md:flex text-sm font-medium text-blue-900">
-          Secure Your Brand Identity — Free Consultation!
+        <p className="hidden md:flex text-md font-medium ">
+          Secure Your Brand Identity —Get free Consultation!
         </p>
 
         {/* Form */}
@@ -81,7 +81,7 @@ const ScrollTopForm = () => {
             value={formData.name}
             onChange={handleChange}
             placeholder="Full Name"
-            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -90,7 +90,7 @@ const ScrollTopForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder="Email"
-            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -99,7 +99,7 @@ const ScrollTopForm = () => {
             value={formData.phone}
             onChange={handleChange}
             placeholder="Phone"
-            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black"
             required
           />
           <input
@@ -108,11 +108,11 @@ const ScrollTopForm = () => {
             value={formData.business}
             onChange={handleChange}
             placeholder="Business Name"
-            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-black"
           />
           <button
             type="submit"
-            className="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md cursor-pointer text-sm font-semibold"
+            className="bg-[#F3B419] hover:scale-102 px-4 py-2 rounded-md cursor-pointer text-sm font-semibold"
           >
             Submit Now
           </button>

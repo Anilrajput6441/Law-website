@@ -29,17 +29,6 @@ export default function WhoWeAre() {
           Now, we use that expertise to help startups, businesses, and creators
           protect what’s rightfully theirs.
         </p>
-        <div className=" flex justify-center bg-white ">
-          <a
-            href="/D-takship.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-700 font-semibold hover:underline flex flex-col items-center"
-          >
-            <Image src="/udyamimg.png" alt="udyamimg" width={50} height={70} />
-            Verified MSME Certificate
-          </a>
-        </div>
 
         {/* Services Section */}
         <div className="bg-white p-6 rounded-xl shadow-md mb-10">
@@ -64,12 +53,12 @@ export default function WhoWeAre() {
 
         {/* Why Choose Us */}
 
-        <div className="bg-[#fff4ec] flex flex-col md:flex-row p-6 rounded-xl shadow-sm mb-10">
-          <div className="">
-            <h3 className="text-xl font-semibold mb-4 text-gray-800">
+        <div className="bg-[#0E265E] flex flex-col md:flex-row p-6  rounded-xl shadow-sm mb-10">
+          <div className=" w-[75%]">
+            <h3 className="text-xl font-semibold mb-4 text-white">
               Why Choose Us? (Trust Factor & Credibility)
             </h3>
-            <ul className="space-y-4 text-gray-700 text-md">
+            <ul className="space-y-4  w-[90%] text-white text-md">
               <li>
                 🔹 <strong>Ex-Officials Advantage</strong> – Our team includes
                 former officials from the Indian IP Office – we know what works
@@ -77,20 +66,20 @@ export default function WhoWeAre() {
               </li>
               <li>
                 🔹 <strong>Tailored Drafting</strong> – Avoid refusals with
-                professionally drafted applications and replies
+                professionally drafted applications and replies.
               </li>
               <li>
-                🔹 <strong>Hearing-Ready</strong> – RReal experience presenting
-                and deciding hearings
+                🔹 <strong>Hearing-Ready</strong> – Real experience presenting
+                and deciding hearings.
               </li>
               <li>
-                🔹 <strong> Cost-Effective and Transparenc</strong> –
+                🔹 <strong> Cost-Effective and Transparency</strong> –
                 Comprehensive service at just ₹2500, No hidden costs. Flat-fee
                 structure. Free consultations.
               </li>
               <li>
                 🔹 <strong>Speedy & Professional </strong> – Quick turnaround
-                with proper documentation
+                with proper documentation.
               </li>
               <li>
                 🔹 <strong>1000+ Successful Trademark Registrations</strong> –
@@ -98,13 +87,21 @@ export default function WhoWeAre() {
               </li>
             </ul>
           </div>
-          <div className="flex bottom-0 mb-[-25]">
-            <Image
-              src="/why-choose-us.png"
-              alt="logo"
-              width={800}
-              height={600}
-            />
+          <div className="flex border justify-center  bg-white ">
+            <a
+              href="/D-takship.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-700  font-semibold hover:underline flex flex-col items-center"
+            >
+              <Image
+                src="/udyamimg.png"
+                alt="udyamimg"
+                width={200}
+                height={200}
+              />
+              Verified MSME Certificate
+            </a>
           </div>
         </div>
 
@@ -141,7 +138,7 @@ export default function WhoWeAre() {
             </strong>
           </p>
           <button
-            className="mt-2 bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-lg cursor-pointer"
+            className="mt-2 bg-[#F2B41A] hover:bg-yellow-400  font-medium px-6 py-2 rounded-lg cursor-pointer"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
               handleConsultationClick();
