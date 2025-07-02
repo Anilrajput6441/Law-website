@@ -115,7 +115,7 @@ export default function HeroSection() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Name"
+              placeholder="Name*"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -124,7 +124,7 @@ export default function HeroSection() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Email"
+              placeholder="Email*"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -133,7 +133,7 @@ export default function HeroSection() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              placeholder="Phone"
+              placeholder="Phone*"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
@@ -142,7 +142,7 @@ export default function HeroSection() {
               name="business"
               value={formData.business}
               onChange={handleChange}
-              placeholder="Business"
+              placeholder="Business*"
               className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
 

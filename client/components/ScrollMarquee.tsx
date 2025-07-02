@@ -120,7 +120,7 @@ const ScrollTopForm = () => {
 
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="bg-blue-700 text-white w-full px-4 py-2 flex text-xl justify-center gap-x-5 cursor-pointer md:hidden"
+          className="bg-[#F2B41A]  w-full px-4 py-2 flex text-xl justify-center gap-x-5 cursor-pointer md:hidden"
         >
           Contact Now <SendHorizontal />
         </button>

@@ -53,12 +53,12 @@ export default function WhoWeAre() {
 
         {/* Why Choose Us */}
 
-        <div className="bg-[#0E265E] flex flex-col md:flex-row p-6  rounded-xl shadow-sm mb-10">
-          <div className=" w-[75%]">
+        <div className="bg-[#0E265E] flex flex-col md:flex-row p-3 md:p-6  rounded-xl shadow-sm mb-10">
+          <div className=" md:w-[75%] mb-8 md:mb-0">
             <h3 className="text-xl font-semibold mb-4 text-white">
               Why Choose Us? (Trust Factor & Credibility)
             </h3>
-            <ul className="space-y-4  w-[90%] text-white text-md">
+            <ul className="space-y-4  md:w-[90%] text-white text-md">
               <li>
                 🔹 <strong>Ex-Officials Advantage</strong> – Our team includes
                 former officials from the Indian IP Office – we know what works
@@ -106,28 +106,37 @@ export default function WhoWeAre() {
         </div>
 
         {/* Offer Section */}
-        <div className="bg-white p-6 rounded-xl shadow-md text-center">
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">
+        <div className="bg-white p-6  rounded-xl shadow-md  flex flex-col items-center justify-center ">
+          <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
             💼 What We Offer – Flat ₹2500 Professional Fee
           </h3>
-          <p className="text-md text-gray-700 mb-4">
+          <p className="text-md text-center text-gray-700 mb-4">
             Our all-in-one Trademark Registration Package includes:
           </p>
-          <ul className="flex flex-col md:flex-row justify-center items-center gap-6 text-gray-700 text-md mb-4">
-            <li className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={16} /> Trademark
-              Filing
+          <ul className="flex flex-col md:flex-row justify-center items-center md:items-center gap-6 text-gray-700 text-md mb-4">
+            <li className="flex gap-2">
+              <div className="mt-1">
+                <CheckCircle className="text-green-500" size={16} />
+              </div>
+              <div>Trademark Filing</div>
             </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={16} /> Reply to
-              Examination Report (Objection)
+
+            <li className="flex gap-2">
+              <div className="mt-1">
+                <CheckCircle className="text-green-500" size={16} />
+              </div>
+              <div>Reply to Examination Report (Objection)</div>
             </li>
-            <li className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={16} /> Appearance in
-              Show Cause Hearing
+
+            <li className="flex gap-2">
+              <div className="mt-1">
+                <CheckCircle className="text-green-500" size={16} />
+              </div>
+              <div>Appearance in Show Cause Hearing</div>
             </li>
           </ul>
-          <p className="text-lg text-gray-600 mb-4">
+
+          <p className="text-lg  text-center text-gray-600 mb-4">
             Flat Fee: ₹2500 (Professional Fees Only)
             <br />
             Govt. fees as applicable (₹4500 for individuals/startups; ₹9000 for
@@ -138,7 +147,7 @@ export default function WhoWeAre() {
             </strong>
           </p>
           <button
-            className="mt-2 bg-[#F2B41A] hover:bg-yellow-400  font-medium px-6 py-2 rounded-lg cursor-pointer"
+            className="mt-2 bg-[#F2B41A] hover:bg-yellow-400  font-medium px-6 py-2  rounded-lg cursor-pointer"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
               handleConsultationClick();

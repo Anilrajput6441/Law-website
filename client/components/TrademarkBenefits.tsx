@@ -49,7 +49,7 @@ export default function TrademarkBenefitsFluid() {
             thrive in the long run.
           </p>
           <Image
-            src="/trademark-benifit.png"
+            src="/trademark-benifit-new.png"
             alt="trademarkbenifit"
             width={600}
             height={600}

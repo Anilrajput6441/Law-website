@@ -12,23 +12,21 @@ type Testimonial = {
 
 const testimonials = [
   {
-    name: "Priya S.",
+    name: "Nilanjana Mukherjee",
     title: "E-Commerce Business Owner",
     stars: 5,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjoTJkAkN_W2Ux2OL3mvM4vaqpBeQEp3a1dA&s", // ✅ Add your image path here
+    image: "/testimonial/testimonial1.png", // ✅ Add your image path here
     quote:
-      "I was running my online fashion store for two years when I discovered that another company had trademarked a similar name. They sent me a legal notice to stop using the name, and I was at risk of shutting down. I contacted D Taksh IP, and they handled everything—filing objections, negotiating with the other party, and ultimately securing my trademark. Don't wait—get your trademark secured today!",
+      "Dtaksh IP provided excellent service for our trademark registration. They are knowledgeable, efficient, and kept us informed throughout the process. Highly recommended for anyone needing top-notch intellectual property assistance.",
     highlight: "Trademarking My Brand Saved Me from a Costly Rebranding.",
   },
   {
-    name: "Rahul Mehta",
+    name: "Shubham Parashar",
     title: "Startup Founder",
     stars: 5,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSc74iwal7QiOS_hvo6cdhH-5g4AHSqzmTTuBVZfdJ1EHWpx7mArp30GfR5BkGCg_WTkk&usqp=CAU",
+    image: "/testimonial/testimonial2.png",
     quote:
-      "I had been using my brand name for three years when a competitor tried to register it as their trademark. I panicked because I didn't have a trademark yet. D Taksh IP guided me through the entire process, filed my application, and fought for my brand rights. The case was settled in my favor, and now my brand is fully protected. I wish I had trademarked my brand earlier. Their legal team is amazing!",
+      "I found very excellent and accurate consultation from Dtaksh IP and team. Everyone is amazing with their work. Highly recommended from my side. For any kind of legal consultation, contact them without a thought.",
     highlight:
       "Competitor Tried to Steal My Business Name – But We Won the Case!",
   },
@@ -36,8 +34,7 @@ const testimonials = [
     name: "Dev Verma",
     title: "Tech Entrepreneur",
     stars: 5,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAzG3NkOwl16mrfvMqBOaIUdcEoT8vUV7wSQ&s",
+    image: "/testimonial/testimonial3.png",
     quote:
       "I had a great experience filing my trademark with D Taksh IP. Their team was highly responsive and attentive, guiding me through each step of the process with clear communication and expert advice. Their thoroughness and dedication made the entire registration process smooth and reassuring. I highly recommend their services.",
     highlight:
@@ -79,7 +76,7 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-20 px-6 bg-[#f8faff]">
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-extrabold text-gray-800">
+        <h2 className="text-3xl md:text-4xl md:font-extrabold text-gray-800">
           Client Success Stories – What Our Clients Say
         </h2>
         <p className="text-gray-500 mt-3 text-lg">

@@ -86,13 +86,13 @@ const Footer = () => {
       <div className="mt-10 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
         <p>©All Rights Reserved</p>
         <div className="flex gap-4 mt-2 md:mt-0">
-          <a href="#" className="hover:text-blue-600">
+          <a href="/Terms-condition" className="hover:text-blue-600">
             Terms & Condition
           </a>
-          <a href="#" className="hover:text-blue-600">
+          <a href="/privacy-policy" className="hover:text-blue-600">
             Privacy Policy
           </a>
-          <a href="#" className="hover:text-blue-600">
+          <a href="/contact" className="hover:text-blue-600">
             Contact Us
           </a>
         </div>

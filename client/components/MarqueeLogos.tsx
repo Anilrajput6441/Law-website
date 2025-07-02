@@ -14,8 +14,8 @@ const logos = [
 
 export default function MarqueeLogos() {
   return (
-    <div className="overflow-hidden whitespace-nowrap py-4 ">
-      <h1 className="text-center font-kanit text-3xl">
+    <div className="overflow-hidden  py-4 ">
+      <h1 className="text-center font-kanit text-3xl px-5">
         Join 100+ Brands Who’ve Secured Their Trademark with Us
       </h1>
       <div className="animate-marquee flex justify-between py-10 items-center space-x-20">

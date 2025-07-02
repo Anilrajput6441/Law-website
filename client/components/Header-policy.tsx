@@ -17,12 +17,12 @@ export default function Header() {
   };
 
   const navItems = [
-    { label: "Our Services", href: "#services" },
-    { label: "Why Trademark?", href: "#why" },
-    { label: "About Us", href: "#about" },
-    { label: "Success Stories", href: "#testimonials" },
-    { label: "FAQs", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Our Services", href: "/" },
+    { label: "Why Trademark?", href: "/" },
+    { label: "About Us", href: "/" },
+    { label: "Success Stories", href: "/" },
+    { label: "FAQs", href: "/" },
+    { label: "Contact", href: "#/" },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function Header() {
               handleConsultationClick();
               setMobileMenuOpen(false);
             }}
-            className="block text-center bg-[#F2B41A] py-2 rounded-md hover:bg-[#f2b51af3] font-semibold"
+            className="block text-white text-center bg-blue-600 py-2 rounded-md hover:bg-blue-700 font-semibold"
           >
             Get a Free Consultation
           </a>
