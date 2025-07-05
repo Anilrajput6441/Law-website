@@ -56,7 +56,8 @@ const Footer = () => {
             <li className="flex gap-2 items-start">
               <MapPin className="text-[#0E265E] mt-1" size={16} />
               <span>
-                L- 1004 Ajnara Integrity, raj nagar extension Ghaziabad.
+                A10/14, Site 3, 1st Floor, Site 3, Meerut Road Industrial Area
+                Ghaziabad - 201003
               </span>
             </li>
             <li className="flex gap-2 items-center">
@@ -72,10 +73,10 @@ const Footer = () => {
             <li className="flex gap-2 items-center">
               <Phone className="text-[#0E265E]" size={16} />
               <a
-                href="tel:+918920590062"
+                href="tel:+919873904892"
                 className="text-[#0E265E] hover:underline"
               >
-                +91 8920590062
+                +91-98739 04892
               </a>
             </li>
           </ul>
