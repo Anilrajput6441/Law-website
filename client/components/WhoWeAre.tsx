@@ -108,7 +108,7 @@ export default function WhoWeAre() {
         {/* Offer Section */}
         <div className="bg-white p-6  rounded-xl shadow-md  flex flex-col items-center justify-center ">
           <h3 className="text-xl font-semibold text-center text-gray-800 mb-2">
-            💼 What We Offer – Flat ₹2500 Professional Fee
+            💼 What We Offer 
           </h3>
           <p className="text-md text-center text-gray-700 mb-4">
             Our all-in-one Trademark Registration Package includes:
